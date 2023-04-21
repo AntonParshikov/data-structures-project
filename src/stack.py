@@ -7,7 +7,13 @@ class Node:
 
         :param data: данные, которые будут храниться в узле
         """
-        pass
+        self.data = data
+        self.next_node = next_node
+
+    def __repr__(self):
+        module_name = "__main__"
+        class_name = self.__class__.__name__
+        return f"<{module_name}.{class_name} object at {hex(id(all))}>"
 
 
 class Stack:
